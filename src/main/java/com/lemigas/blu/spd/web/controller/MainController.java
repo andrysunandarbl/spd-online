@@ -30,19 +30,26 @@ public class MainController {
     public String index(ModelMap map){
         
         logger.info("index controller..............");
-        return "index";        
+        return "index.html";
     }
     @RequestMapping(value="/login", method= RequestMethod.GET)
     public String login(ModelMap map){
 
         logger.info("login controller..............");
-        return "login";
+        return "login.html";
     }
     @RequestMapping(value="/biodata-pegawai", method= RequestMethod.GET)
     public String table(ModelMap map){
 
         logger.info("biodata-pegawai controller..............");
-        return "biodata_pegawai";
+        return "biodata_pegawai.html";
+    }
+
+    @RequestMapping(value="/form-wizards", method= RequestMethod.GET)
+    public String formWizards(ModelMap map){
+
+        logger.info("form wizards controller..............");
+        return "form_wizards.html";
     }
     
     
